@@ -73,7 +73,19 @@ func _ready() -> void:
         var animal_en := str(level_data.get("animal_name_en", "Forest Animal"))
         var unlocked: Array = SaveManager.data.get("progress", {}).get("unlocked_levels", [1])
         button.text = ("⭐ %02d\n%s" % [i, animal_fa]) if LanguageManager.is_persian() else ("⭐ %02d\n%s" % [i, animal_en])
-        button.custom_minimum_size = Vector2(0, 88)
+        button.custom_minimum_size = Vector2(0, 104)
+        var animal_id := str(level_data.get("animal", "rabbit"))
+        var portrait_path := "res://assets/rabbit_patient.svg"
+        match animal_id:
+            "fox": portrait_path = "res://assets/fox_patient.svg"
+            "deer", "fawn": portrait_path = "res://assets/fawn_patient.svg"
+            "hedgehog": portrait_path = "res://assets/hedgehog_patient.svg"
+            "rabbit": portrait_path = "res://assets/rabbit_patient.svg"
+            _: portrait_path = "res://assets/rabbit_patient.svg"
+        if ResourceLoader.exists(portrait_path):
+            button.icon = load(portrait_path)
+            button.expand_icon = true
+            button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT
         button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
         button.add_theme_stylebox_override("normal", _wood_style())
         button.add_theme_stylebox_override("hover", _wood_style("#d58a3e"))
