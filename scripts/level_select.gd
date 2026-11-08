@@ -25,7 +25,7 @@ func _ready() -> void:
     title.add_theme_color_override("font_color", Color("#ffe39a"))
     column.add_child(title)
 
-    for i in range(1, 8):
+    for i in range(1, 16):
         var button := Button.new()
         var level_data = _get_level(i)
         var label = "مرحله %d — %s" % [i, level_data.get("animal_name_fa", "")] if LanguageManager.is_persian() else "Level %d — %s" % [i, level_data.get("animal_name_en", "Animal")]
