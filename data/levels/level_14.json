@@ -1,0 +1,33 @@
+{
+  "level_id": 14,
+  "animal": "parrot",
+  "animal_name_fa": "پیکو",
+  "animal_name_en": "Pico",
+  "intro_dialogue_fa": "پرهایش به برگ و گردوغبار آغشته شده‌اند.",
+  "intro_dialogue_en": "Leaves and dust are caught in the parrot's feathers.",
+  "mechanic": "feather_groom",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "پرها را با دقت بررسی کن",
+      "instruction_en": "Look carefully at the feathers"
+    },
+    {
+      "type": "choose_tool",
+      "instruction_fa": "برس نرم را انتخاب کن",
+      "instruction_en": "Choose the soft brush"
+    },
+    {
+      "type": "groom",
+      "instruction_fa": "پرها را آرام مرتب کن",
+      "instruction_en": "Gently groom the feathers"
+    }
+  ],
+  "rewards": {
+    "coins": 90,
+    "sticker": "parrot"
+  },
+  "tip_fa": "پرهای پرندگان حساس‌اند و باید بدون کشیدن مرتب شوند.",
+  "tip_en": "Bird feathers are delicate and should never be pulled.",
+  "status": "content_draft_not_yet_playable"
+}
