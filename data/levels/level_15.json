@@ -1,0 +1,33 @@
+{
+  "level_id": 15,
+  "animal": "elephant",
+  "animal_name_fa": "اِلی",
+  "animal_name_en": "Ellie",
+  "intro_dialogue_fa": "برای جشن بازگشت به گله آماده می‌شود.",
+  "intro_dialogue_en": "The elephant calf is getting ready to rejoin the herd.",
+  "mechanic": "final_rescue",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "نیازهای الی را بررسی کن",
+      "instruction_en": "Check Ellie's needs"
+    },
+    {
+      "type": "prepare",
+      "instruction_fa": "آب و سایه را آماده کن",
+      "instruction_en": "Prepare water and shade"
+    },
+    {
+      "type": "reunite",
+      "instruction_fa": "او را به گله‌اش برسان",
+      "instruction_en": "Help her rejoin her herd"
+    }
+  ],
+  "rewards": {
+    "coins": 120,
+    "sticker": "elephant"
+  },
+  "tip_fa": "بهترین کمک، مراقبت مهربانانه و بازگشت حیوان به خانواده و زیستگاهش است.",
+  "tip_en": "Kind care helps an animal return safely to its family and habitat.",
+  "status": "content_draft_not_yet_playable"
+}
