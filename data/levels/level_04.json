@@ -3,8 +3,31 @@
   "animal": "bird",
   "animal_name_fa": "چیریک",
   "animal_name_en": "Chirpy",
-  "steps": [],
+  "intro_dialogue_fa": "بال چیریک آسیب دیده و باید استراحت کند.",
+  "intro_dialogue_en": "Chirpy's wing is hurt and needs rest.",
+  "mechanic": "safe_rest",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "به بال دست نزن؛ فقط نگاه کن",
+      "instruction_en": "Do not touch the wing; just observe"
+    },
+    {
+      "type": "call_vet",
+      "instruction_fa": "دامپزشک را خبر کن",
+      "instruction_en": "Call the veterinarian"
+    },
+    {
+      "type": "prepare_nest",
+      "instruction_fa": "لانه‌ای آرام آماده کن",
+      "instruction_en": "Prepare a calm nest"
+    }
+  ],
   "rewards": {
-    "coins": 35
-  }
+    "coins": 35,
+    "sticker": "bird"
+  },
+  "tip_fa": "بال آسیب‌دیده باید توسط دامپزشک بررسی شود.",
+  "tip_en": "An injured wing should be checked by a veterinarian.",
+  "status": "content_draft_not_yet_playable"
 }
