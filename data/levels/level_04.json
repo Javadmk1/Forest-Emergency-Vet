@@ -1,0 +1,10 @@
+{
+  "level_id": 4,
+  "animal": "bird",
+  "animal_name_fa": "چیریک",
+  "animal_name_en": "Chirpy",
+  "steps": [],
+  "rewards": {
+    "coins": 35
+  }
+}
