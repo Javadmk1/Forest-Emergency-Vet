@@ -1,0 +1,24 @@
+config_version=5
+
+[application]
+config/name="Forest Emergency Vet"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[display]
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/size/window_width_override=540
+window/size/window_height_override=960
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.12, 0.2, 0.12, 1)
+
+[autoload]
+SaveManager="*res://scripts/save_manager.gd"
+LanguageManager="*res://scripts/language_manager.gd"
+EconomyManager="*res://scripts/economy_manager.gd"
