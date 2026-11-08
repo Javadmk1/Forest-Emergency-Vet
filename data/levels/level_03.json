@@ -3,8 +3,31 @@
   "animal": "turtle",
   "animal_name_fa": "لاکی",
   "animal_name_en": "Lucky",
-  "steps": [],
+  "intro_dialogue_fa": "لاک لاکی ترک کوچکی دارد.",
+  "intro_dialogue_en": "Lucky's shell has a small crack.",
+  "mechanic": "gentle_protection",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "ترک را پیدا کن",
+      "instruction_en": "Find the crack"
+    },
+    {
+      "type": "call_vet",
+      "instruction_fa": "از دامپزشک کمک بخواه",
+      "instruction_en": "Ask the veterinarian for help"
+    },
+    {
+      "type": "rest",
+      "instruction_fa": "جای آرامی برای استراحت آماده کن",
+      "instruction_en": "Prepare a quiet resting place"
+    }
+  ],
   "rewards": {
-    "coins": 30
-  }
+    "coins": 30,
+    "sticker": "turtle"
+  },
+  "tip_fa": "لاک بخشی از بدن لاک‌پشت است؛ هرگز آن را دستکاری نمی‌کنیم.",
+  "tip_en": "A shell is part of a turtle's body. Never try to repair it yourself.",
+  "status": "content_draft_not_yet_playable"
 }
