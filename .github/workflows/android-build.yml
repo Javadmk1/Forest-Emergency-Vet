@@ -11,20 +11,48 @@ permissions:
 jobs:
   export-android:
     name: Export debug APK
-    runs-on: ubuntu-latest
-    container:
-      image: barichello/godot-ci:4.3.0
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify project and import resources
-        run: godot --headless --editor --path . --quit
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK components
+        run: |
+          sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$ANDROID_HOME" >> "$GITHUB_ENV"
+
+      - name: Install Godot 4.3 and export templates
+        run: |
+          mkdir -p "$HOME/.local/share/godot/export_templates/4.3.stable"
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip -O /tmp/godot.zip
+          unzip -q /tmp/godot.zip -d /tmp/godot
+          sudo install -m 0755 /tmp/godot/Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz -O /tmp/templates.tpz
+          mkdir -p /tmp/godot-templates
+          unzip -q /tmp/templates.tpz -d /tmp/godot-templates
+          cp -a /tmp/godot-templates/templates/. "$HOME/.local/share/godot/export_templates/4.3.stable/"
+          godot --version
+
+      - name: Import and validate project
+        run: |
+          godot --headless --editor --path . --quit
+          test -f project.godot
 
       - name: Export Android APK
         run: |
           mkdir -p build
           godot --headless --path . --export-debug "Android" build/Forest-Emergency-Vet-debug.apk
+          test -s build/Forest-Emergency-Vet-debug.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
