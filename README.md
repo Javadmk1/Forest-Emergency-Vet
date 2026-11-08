@@ -17,3 +17,8 @@ Godot 4 bilingual (Persian/English) mobile game starter.
 
 ## Current status
 This is an initial code scaffold, not the finished game and not a verified APK. Individual illustrated assets, full treatment interactions, accessibility checks, Android export preset and signing configuration are still pending.
+
+
+## First playable flow
+- Main menu -> Forest Map -> Level 1 -> choose tweezers -> remove thorn -> wash three times -> apply bandage -> earn 20 coins and unlock level 2.
+- Treatment flow is currently a UI prototype using emoji placeholders. Replace these with original illustrated art and add touch-drag interactions in the next art/gameplay milestone.
