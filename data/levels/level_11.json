@@ -1,0 +1,33 @@
+{
+  "level_id": 11,
+  "animal": "frog",
+  "animal_name_fa": "فِرگی",
+  "animal_name_en": "Freddy",
+  "intro_dialogue_fa": "از برکه دور افتاده و باید به زیستگاهش برگردد.",
+  "intro_dialogue_en": "The frog is away from its pond and needs help returning.",
+  "mechanic": "habitat_path",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "مسیر امن کنار برکه را پیدا کن",
+      "instruction_en": "Find the safe path beside the pond"
+    },
+    {
+      "type": "path",
+      "instruction_fa": "مسیر را دنبال کن",
+      "instruction_en": "Follow the path"
+    },
+    {
+      "type": "return",
+      "instruction_fa": "او را به برکه برگردان",
+      "instruction_en": "Guide the frog back to the pond"
+    }
+  ],
+  "rewards": {
+    "coins": 70,
+    "sticker": "frog"
+  },
+  "tip_fa": "هر جانور باید در زیستگاه مناسب خودش زندگی کند.",
+  "tip_en": "Wild animals belong in their suitable natural habitats.",
+  "status": "content_draft_not_yet_playable"
+}
