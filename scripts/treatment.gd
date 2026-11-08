@@ -45,7 +45,7 @@ func _build_ui() -> void:
     layout.add_child(animal)
 
     var illustration := Label.new()
-    illustration.text = "       🌿\n   (\_/ )\n   ( •ᴗ• )\n   / >🌵"
+    illustration.text = "       🌿\n   (_/ )\n   ( •ᴗ• )\n   / >🌵"
     illustration.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
     illustration.add_theme_font_size_override("font_size", 42)
     illustration.custom_minimum_size.y = 220
