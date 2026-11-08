@@ -3,8 +3,31 @@
   "animal": "fox",
   "animal_name_fa": "فاکسی",
   "animal_name_en": "Foxy",
-  "steps": [],
+  "intro_dialogue_fa": "فاکسی بی‌حال است و احساس گرما می‌کند.",
+  "intro_dialogue_en": "Foxy feels unwell and warm.",
+  "mechanic": "illness_observation",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "نشانه‌های بیماری را بررسی کن",
+      "instruction_en": "Notice the signs of illness"
+    },
+    {
+      "type": "water",
+      "instruction_fa": "آب تازه آماده کن",
+      "instruction_en": "Prepare fresh water"
+    },
+    {
+      "type": "call_vet",
+      "instruction_fa": "برای بررسی با دامپزشک تماس بگیر",
+      "instruction_en": "Ask the veterinarian to check Foxy"
+    }
+  ],
   "rewards": {
-    "coins": 40
-  }
+    "coins": 40,
+    "sticker": "fox"
+  },
+  "tip_fa": "بیماری همیشه زخم نیست؛ حیوان بیمار به بررسی دامپزشک نیاز دارد.",
+  "tip_en": "An illness is not the same as a wound; a vet should examine a sick animal.",
+  "status": "content_draft_not_yet_playable"
 }
