@@ -1,0 +1,10 @@
+{
+  "level_id": 5,
+  "animal": "fox",
+  "animal_name_fa": "فاکسی",
+  "animal_name_en": "Foxy",
+  "steps": [],
+  "rewards": {
+    "coins": 40
+  }
+}
