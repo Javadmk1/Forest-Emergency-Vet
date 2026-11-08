@@ -1,0 +1,33 @@
+{
+  "level_id": 13,
+  "animal": "badger",
+  "animal_name_fa": "بادی",
+  "animal_name_en": "Buddy",
+  "intro_dialogue_fa": "به استراحت و مرتب‌کردن جای خواب نیاز دارد.",
+  "intro_dialogue_en": "The badger needs rest and a tidy sleeping place.",
+  "mechanic": "comfort_care",
+  "tasks": [
+    {
+      "type": "prepare",
+      "instruction_fa": "جای خواب تمیز را آماده کن",
+      "instruction_en": "Prepare a clean resting place"
+    },
+    {
+      "type": "choose_item",
+      "instruction_fa": "پتوی نرم را انتخاب کن",
+      "instruction_en": "Choose the soft blanket"
+    },
+    {
+      "type": "settle",
+      "instruction_fa": "کمکش کن راحت استراحت کند",
+      "instruction_en": "Help the badger settle comfortably"
+    }
+  ],
+  "rewards": {
+    "coins": 80,
+    "sticker": "badger"
+  },
+  "tip_fa": "استراحت و محیط آرام بخشی از مراقبت از حیوانات است.",
+  "tip_en": "Rest and a calm environment are part of animal care.",
+  "status": "content_draft_not_yet_playable"
+}
