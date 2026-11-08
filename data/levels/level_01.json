@@ -1,0 +1,41 @@
+{
+  "level_id": 1,
+  "animal": "rabbit",
+  "animal_name_fa": "پوپی",
+  "animal_name_en": "Poppy",
+  "intro_dialogue_fa": "آخ! پنجه‌ام درد می‌کند…",
+  "intro_dialogue_en": "Ouch! My paw hurts…",
+  "steps": [
+    {
+      "type": "diagnose",
+      "correct_tool": "tweezers"
+    },
+    {
+      "type": "drag",
+      "tool": "tweezers",
+      "target": "thorn"
+    },
+    {
+      "type": "wash",
+      "bubbles_required": 3
+    },
+    {
+      "type": "bandage",
+      "rounds_required": 1
+    },
+    {
+      "type": "path",
+      "obstacles": [
+        "rock",
+        "puddle"
+      ],
+      "timer_sec": 20
+    }
+  ],
+  "rewards": {
+    "coins": 20,
+    "sticker": "poppy"
+  },
+  "tip_fa": "پس از بیرون آوردن جسم خارجی، محل را تمیز و پانسمان می‌کنیم.",
+  "tip_en": "After removing a foreign object, gently clean and cover the area."
+}
