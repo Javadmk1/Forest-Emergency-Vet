@@ -186,14 +186,24 @@ func _advance_step() -> void:
         Step.BANDAGE:
             current_step = Step.COMPLETE
         Step.COMPLETE:
-            EconomyManager.add_coins(20)
-            var unlocked: Array = SaveManager.data["progress"]["unlocked_levels"]
-            if not unlocked.has(2):
-                unlocked.append(2)
-            SaveManager.data["progress"]["stars_per_level"]["1"] = 3
-            var album: Array = SaveManager.data["album"]["unlocked_animals"]
-            if not album.has("rabbit"):
-                album.append("rabbit")
+            var progress: Dictionary = SaveManager.data["progress"]
+            var completed: Array = progress.get("completed_levels", [])
+            var first_completion := not completed.has(1)
+            if first_completion:
+                completed.append(1)
+                progress["completed_levels"] = completed
+                var unlocked: Array = progress.get("unlocked_levels", [])
+                if not unlocked.has(2):
+                    unlocked.append(2)
+                progress["unlocked_levels"] = unlocked
+                var stars: Dictionary = progress.get("stars_per_level", {})
+                stars["1"] = 3
+                progress["stars_per_level"] = stars
+                var album: Array = SaveManager.data["album"].get("unlocked_animals", [])
+                if not album.has("rabbit"):
+                    album.append("rabbit")
+                SaveManager.data["album"]["unlocked_animals"] = album
+                EconomyManager.add_coins(20)
             SaveManager.save_game()
             get_tree().change_scene_to_file("res://scenes/level_select.tscn")
     _show_step()
