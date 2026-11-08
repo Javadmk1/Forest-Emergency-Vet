@@ -62,10 +62,18 @@ jobs:
           godot --headless --editor --path . --quit
           godot --headless --path . --quit-after 5
 
+      - name: Prepare Android debug signing and ADB
+        run: |
+          mkdir -p "$HOME/.android"
+          keytool -genkeypair -v -keystore "$HOME/.android/debug.keystore" -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US" -noprompt
+          adb start-server
+          adb version
+          test -f "$HOME/.android/debug.keystore"
+
       - name: Export Android APK
         run: |
           mkdir -p build
-          godot --headless --path . --export-debug "Android" build/Forest-Emergency-Vet-debug.apk
+          godot --headless --path . --verbose --export-debug "Android" build/Forest-Emergency-Vet-debug.apk
           test -s build/Forest-Emergency-Vet-debug.apk
 
       - name: Upload APK
