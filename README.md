@@ -22,3 +22,11 @@ This is an initial code scaffold, not the finished game and not a verified APK. 
 ## First playable flow
 - Main menu -> Forest Map -> Level 1 -> choose tweezers -> remove thorn -> wash three times -> apply bandage -> earn 20 coins and unlock level 2.
 - Treatment flow is currently a UI prototype using emoji placeholders. Replace these with original illustrated art and add touch-drag interactions in the next art/gameplay milestone.
+
+
+## Expanded content
+- Level content drafts now cover levels 8–15.
+- These eight additions are content/data drafts, not yet playable scenes. The gameplay controller must be generalized before they can be called playable.
+
+## Advertising
+See docs/ADVERTISING.md. An AdsManager scaffold is registered, but no native ad SDK is installed or serving ads yet. The game targets ages 6–10, so use a currently Families self-certified SDK version, child age treatment, G-rated creatives, and parent-gated optional rewarded ads only. Do not add multiple unverified ad SDKs.
