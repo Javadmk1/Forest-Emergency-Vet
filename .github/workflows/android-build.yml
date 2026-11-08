@@ -55,12 +55,12 @@ jobs:
 
       - name: Import and validate project
         run: |
-          godot --headless --editor --path . --quit
           test -f project.godot
-          while IFS= read -r script; do
-            echo "Checking $script"
-            godot --headless --path . --check-only --script "$script"
-          done < <(find scripts -name '*.gd' -type f | sort)
+          # Load the project as a project so autoload singletons (SaveManager, etc.)
+          # are registered before scripts are parsed. --script loads files standalone
+          # and incorrectly reports project autoload identifiers as missing.
+          godot --headless --editor --path . --quit
+          godot --headless --path . --quit-after 5
 
       - name: Export Android APK
         run: |
