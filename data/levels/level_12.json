@@ -1,0 +1,33 @@
+{
+  "level_id": 12,
+  "animal": "wildcat",
+  "animal_name_fa": "میشا",
+  "animal_name_en": "Misha",
+  "intro_dialogue_fa": "پنجه‌اش خاکی شده و باید بررسی شود.",
+  "intro_dialogue_en": "The wildcat's paw is dirty and needs checking.",
+  "mechanic": "inspect_and_clean",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "ابتدا پنجه را بررسی کن",
+      "instruction_en": "Check the paw first"
+    },
+    {
+      "type": "choose_tool",
+      "instruction_fa": "ابزار تمیزکاری مناسب را انتخاب کن",
+      "instruction_en": "Choose the right cleaning tool"
+    },
+    {
+      "type": "clean",
+      "instruction_fa": "پنجه را تمیز کن",
+      "instruction_en": "Clean the paw"
+    }
+  ],
+  "rewards": {
+    "coins": 75,
+    "sticker": "wildcat"
+  },
+  "tip_fa": "مشاهده دقیق، اولین قدم برای کمک درست است.",
+  "tip_en": "Careful observation is the first step toward helping.",
+  "status": "content_draft_not_yet_playable"
+}
