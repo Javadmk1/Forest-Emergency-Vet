@@ -35,7 +35,7 @@ func _ready() -> void:
 
 func _build_ui() -> void:
     var art := TextureRect.new()
-    art.texture = load("res://assets/forest_menu_bg.svg")
+    art.texture = load("res://assets/clinic_interior.svg")
     art.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
     art.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
     art.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
