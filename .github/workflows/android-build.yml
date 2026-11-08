@@ -42,10 +42,25 @@ jobs:
           cp -a /tmp/godot-templates/templates/. "$HOME/.local/share/godot/export_templates/4.3.stable/"
           godot --version
 
+      - name: Configure Godot Android export paths
+        run: |
+          mkdir -p "$HOME/.config/godot"
+          cat > "$HOME/.config/godot/editor_settings-4.tres" <<EOF
+          [gd_resource type="EditorSettings" format=3]
+
+          [resource]
+          export/android/android_sdk_path = "$ANDROID_HOME"
+          export/android/java_sdk_path = "$JAVA_HOME"
+          EOF
+
       - name: Import and validate project
         run: |
           godot --headless --editor --path . --quit
           test -f project.godot
+          while IFS= read -r script; do
+            echo "Checking $script"
+            godot --headless --path . --check-only --script "$script"
+          done < <(find scripts -name '*.gd' -type f | sort)
 
       - name: Export Android APK
         run: |
