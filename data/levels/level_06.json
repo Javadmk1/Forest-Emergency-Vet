@@ -3,8 +3,31 @@
   "animal": "deer",
   "animal_name_fa": "لونا",
   "animal_name_en": "Luna",
-  "steps": [],
+  "intro_dialogue_fa": "لونا به کمک برای دو مشکل هم‌زمان نیاز دارد.",
+  "intro_dialogue_en": "Luna needs help with two problems at once.",
+  "mechanic": "prioritize_and_call",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "اول وضعیت را آرام بررسی کن",
+      "instruction_en": "Calmly observe the situation first"
+    },
+    {
+      "type": "prioritize",
+      "instruction_fa": "اول کمک بزرگ‌تر را خبر کن",
+      "instruction_en": "Call an adult for help first"
+    },
+    {
+      "type": "comfort",
+      "instruction_fa": "از فاصله امن آرامش کن",
+      "instruction_en": "Keep Luna calm from a safe distance"
+    }
+  ],
   "rewards": {
-    "coins": 50
-  }
+    "coins": 50,
+    "sticker": "deer"
+  },
+  "tip_fa": "وقتی چند مشکل وجود دارد، اول از بزرگ‌تر و متخصص کمک می‌گیریم.",
+  "tip_en": "When there are several problems, ask an adult and an expert for help first.",
+  "status": "content_draft_not_yet_playable"
 }
