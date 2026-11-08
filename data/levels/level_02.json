@@ -3,8 +3,36 @@
   "animal": "squirrel",
   "animal_name_fa": "ناتس",
   "animal_name_en": "Nuts",
-  "steps": [],
+  "intro_dialogue_fa": "دمش خراش کوچکی برداشته است.",
+  "intro_dialogue_en": "The squirrel has a small scrape on its tail.",
+  "mechanic": "clean_and_cover",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "اول محل خراش را پیدا کن",
+      "instruction_en": "First, locate the scrape"
+    },
+    {
+      "type": "choose_tool",
+      "instruction_fa": "گاز تمیز را انتخاب کن",
+      "instruction_en": "Choose clean gauze"
+    },
+    {
+      "type": "clean",
+      "instruction_fa": "محل را به‌آرامی تمیز کن",
+      "instruction_en": "Gently clean the area"
+    },
+    {
+      "type": "cover",
+      "instruction_fa": "با کمک دامپزشک پانسمان کن",
+      "instruction_en": "Help the vet cover the area"
+    }
+  ],
   "rewards": {
-    "coins": 25
-  }
+    "coins": 25,
+    "sticker": "squirrel"
+  },
+  "tip_fa": "برای زخم‌ها از بزرگ‌تر یا دامپزشک کمک می‌گیریم.",
+  "tip_en": "Ask an adult or veterinarian to help with injuries.",
+  "status": "content_draft_not_yet_playable"
 }
