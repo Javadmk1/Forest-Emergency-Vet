@@ -1,0 +1,33 @@
+{
+  "level_id": 10,
+  "animal": "raccoon",
+  "animal_name_fa": "رِمی",
+  "animal_name_en": "Remy",
+  "intro_dialogue_fa": "بین چند وسیله، غذای مناسبش را پیدا نمی‌کند.",
+  "intro_dialogue_en": "The raccoon cannot identify its suitable food.",
+  "mechanic": "food_sort",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "به تصویر خوراکی‌ها دقت کن",
+      "instruction_en": "Look carefully at the food choices"
+    },
+    {
+      "type": "choose_food",
+      "instruction_fa": "غذای مناسب را انتخاب کن",
+      "instruction_en": "Choose the suitable food"
+    },
+    {
+      "type": "serve",
+      "instruction_fa": "غذا را در ظرفش بگذار",
+      "instruction_en": "Place the food in its bowl"
+    }
+  ],
+  "rewards": {
+    "coins": 65,
+    "sticker": "raccoon"
+  },
+  "tip_fa": "هر حیوان به رژیم غذایی مخصوص خودش نیاز دارد.",
+  "tip_en": "Every animal needs a diet suited to its species.",
+  "status": "content_draft_not_yet_playable"
+}
