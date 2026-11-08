@@ -3,8 +3,31 @@
   "animal": "hedgehog",
   "animal_name_fa": "تیغی",
   "animal_name_en": "Prickles",
-  "steps": [],
+  "intro_dialogue_fa": "تیغی ترسیده و به کمک دامپزشک نیاز دارد.",
+  "intro_dialogue_en": "Prickles is frightened and needs a veterinarian's help.",
+  "mechanic": "calm_and_rescue",
+  "tasks": [
+    {
+      "type": "stay_calm",
+      "instruction_fa": "آرام بمان و حیوان را نترسان",
+      "instruction_en": "Stay calm and do not frighten the animal"
+    },
+    {
+      "type": "call_vet",
+      "instruction_fa": "دامپزشک را خبر کن",
+      "instruction_en": "Call the veterinarian"
+    },
+    {
+      "type": "safe_box",
+      "instruction_fa": "جعبه امن و دارای هوا آماده کن",
+      "instruction_en": "Prepare a safe, ventilated carrier"
+    }
+  ],
   "rewards": {
-    "coins": 75
-  }
+    "coins": 75,
+    "sticker": "hedgehog"
+  },
+  "tip_fa": "خارهای جوجه‌تیغی را خودمان بیرون نمی‌آوریم؛ از دامپزشک کمک می‌گیریم.",
+  "tip_en": "Never remove a hedgehog's spines yourself; ask a veterinarian.",
+  "status": "content_draft_not_yet_playable"
 }
