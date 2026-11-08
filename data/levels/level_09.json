@@ -1,0 +1,33 @@
+{
+  "level_id": 9,
+  "animal": "bear",
+  "animal_name_fa": "بِری",
+  "animal_name_en": "Berry",
+  "intro_dialogue_fa": "پنجه‌اش گِلی شده و نیاز به تمیزکاری دارد.",
+  "intro_dialogue_en": "The bear cub's paw is muddy and needs cleaning.",
+  "mechanic": "wash_and_dry",
+  "tasks": [
+    {
+      "type": "choose_tool",
+      "instruction_fa": "کاسه آب تمیز را انتخاب کن",
+      "instruction_en": "Choose the clean water bowl"
+    },
+    {
+      "type": "wash",
+      "instruction_fa": "گل را با آب تمیز پاک کن",
+      "instruction_en": "Wash away the mud with clean water"
+    },
+    {
+      "type": "dry",
+      "instruction_fa": "با حوله نرم خشک کن",
+      "instruction_en": "Dry with a soft towel"
+    }
+  ],
+  "rewards": {
+    "coins": 60,
+    "sticker": "bear"
+  },
+  "tip_fa": "پس از بازی در طبیعت، تمیز و خشک نگه‌داشتن پنجه‌ها کمک‌کننده است.",
+  "tip_en": "After outdoor play, keeping paws clean and dry is helpful.",
+  "status": "content_draft_not_yet_playable"
+}
