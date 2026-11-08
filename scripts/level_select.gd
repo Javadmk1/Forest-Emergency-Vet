@@ -81,6 +81,7 @@ func _ready() -> void:
             "deer", "fawn": portrait_path = "res://assets/fawn_patient.svg"
             "hedgehog": portrait_path = "res://assets/hedgehog_patient.svg"
             "rabbit": portrait_path = "res://assets/rabbit_patient.svg"
+            "squirrel": portrait_path = "res://assets/squirrel_patient.svg"
             _: portrait_path = "res://assets/rabbit_patient.svg"
         if ResourceLoader.exists(portrait_path):
             button.icon = load(portrait_path)
