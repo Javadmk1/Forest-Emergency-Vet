@@ -56,25 +56,21 @@ jobs:
       - name: Import and validate project
         run: |
           test -f project.godot
-          # Load the project as a project so autoload singletons (SaveManager, etc.)
-          # are registered before scripts are parsed. --script loads files standalone
-          # and incorrectly reports project autoload identifiers as missing.
           godot --headless --editor --path . --quit
           godot --headless --path . --quit-after 5
 
-      - name: Prepare Android debug signing and ADB
+      - name: Prepare Android debug signing
         run: |
           mkdir -p "$HOME/.android"
           keytool -genkeypair -v -keystore "$HOME/.android/debug.keystore" -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US" -noprompt
-          adb start-server
-          adb version
-          test -f "$HOME/.android/debug.keystore"
+          test -s "$HOME/.android/debug.keystore"
 
       - name: Export Android APK
         run: |
           mkdir -p build
           godot --headless --path . --verbose --export-debug "Android" build/Forest-Emergency-Vet-debug.apk
           test -s build/Forest-Emergency-Vet-debug.apk
+          ls -lh build/Forest-Emergency-Vet-debug.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
