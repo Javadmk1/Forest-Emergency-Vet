@@ -1,0 +1,33 @@
+{
+  "level_id": 8,
+  "animal": "owl",
+  "animal_name_fa": "اُلی",
+  "animal_name_en": "Ollie",
+  "intro_dialogue_fa": "چشمش از گرده گل تحریک شده است.",
+  "intro_dialogue_en": "Pollen has irritated the owl's eye.",
+  "mechanic": "gentle_clean",
+  "tasks": [
+    {
+      "type": "observe",
+      "instruction_fa": "به نشانه‌های ناراحتی توجه کن",
+      "instruction_en": "Notice the signs of discomfort"
+    },
+    {
+      "type": "choose_tool",
+      "instruction_fa": "پارچه تمیز و نرم را انتخاب کن",
+      "instruction_en": "Choose a clean, soft cloth"
+    },
+    {
+      "type": "clean",
+      "instruction_fa": "اطراف چشم را خیلی آرام تمیز کن",
+      "instruction_en": "Gently clean around the eye"
+    }
+  ],
+  "rewards": {
+    "coins": 55,
+    "sticker": "owl"
+  },
+  "tip_fa": "برای مراقبت از چشم حیوانات باید بسیار آرام و بدون فشار عمل کرد.",
+  "tip_en": "Eye care must always be gentle and never involve pressure.",
+  "status": "content_draft_not_yet_playable"
+}
