@@ -16,7 +16,7 @@ A bilingual Persian/English portrait mobile game prototype built with Godot 4.3.
 
 ## Important scope notes
 - Level 1 is the only implemented treatment flow. Levels 2–15 are content drafts and are not yet playable.
-- Clinic, animal album, shop and parent area remain planned UI sections.
+- Animal album now lists rescued and upcoming animals; the clinic shop supports three coin-purchased decor unlocks; settings can switch language; the parent area explains the child-friendly build and disabled ads. These are lightweight functional menus, not a fully furnished clinic/decor placement system.
 - The illustrated assets are original lightweight SVG artwork designed to keep the Android build small. They are not a full set of production character animations or separate high-resolution sprite sheets.
 - The project has not yet been verified on a physical Android device. A successful CI export only confirms that the build pipeline produced an APK.
 - Ads remain disabled. This is a child-focused game prototype; do not enable ad SDKs without a suitable family-safe design and required compliance review.
