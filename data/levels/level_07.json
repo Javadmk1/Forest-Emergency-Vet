@@ -1,0 +1,10 @@
+{
+  "level_id": 7,
+  "animal": "hedgehog",
+  "animal_name_fa": "تیغی",
+  "animal_name_en": "Prickles",
+  "steps": [],
+  "rewards": {
+    "coins": 75
+  }
+}
